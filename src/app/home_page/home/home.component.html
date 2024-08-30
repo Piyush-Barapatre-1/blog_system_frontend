@@ -1,0 +1,153 @@
+<!-- navbar.component.html -->
+
+<!-- navbar.component.html -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-brand d-flex">
+                <img src="data:image/png;base64,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"
+                    class="d-block mx-auto" alt="logo">
+                <span class="ms-2" style="font-weight: normal;">Blog System</span>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: pointer;" (click)="gotoHome()" routerLinkActive="active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: pointer;" (click)="gotoLogin()" routerLinkActive="active">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: pointer;" (click)="gotoRegister()" routerLinkActive="active">Register Yourself</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div [hidden]="logdisable">
+    <app-user-login></app-user-login>
+</div>
+
+<div [hidden]="regdisable">
+    <app-user-register></app-user-register>
+</div>
+
+<main>
+
+
+
+    <div class="container-fluid mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <input type="text" [value]="listValue" class="form-control" placeholder="Search" #key
+                    (keyup)="searchText(key.value)" (keyup.enter)="goToResult(key.value)" />
+                <ul *ngFor="let s of searchResult" class="list-group">
+                    <li (click)="onSearch(s)" class="list-group-item list-group-item-action mt-1 "
+                        style="border: none; line-height: 70%;">
+                        {{s}}
+                    </li>
+                </ul>
+
+                <!-- <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+    @if (user_blogs?.length != 0) {
+    <div class="container-fluid mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10 col-xl-8"> <!-- Adjust container width based on screen size -->
+                <div class="bg-light text-dark p-3 shadow-lg rounded">
+                    <div *ngFor="let ub of user_blogs" class="mb-4" id="{{ub.blog_tags}}">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p><strong>Author Name:</strong> <strong><i> {{ ub?.user?.full_name }}</i></strong></p>
+                            <p><strong><i>{{ub.updatedAt | date: 'mediumDate'}}</i></strong></p>
+                        </div>
+
+                        <!-- <p><strong>Author Name:</strong> <strong><i> {{ ub?.user?.full_name }}</i></strong></p>
+                        <p><strong><i>{{ub.updatedAt | date: 'mediumDate'}}</i></strong></p> -->
+                        <p><strong>Title:</strong> {{ ub.blog_title }}</p>
+                        <p><strong>Description:</strong> {{ ub.blog_description }}</p>
+                        <p><strong>Blog Status:</strong> {{ ub.blog_status }}</p>
+                        <p><strong>Blog Tag:</strong> {{ ub.blog_tags }}</p>
+                        <img [src]="'http://localhost:9000' + ub.blog_img" alt="{{ ub.blog_title }}"
+                            class="img-fluid mb-3">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center mt-4">
+            <li class="page-item" [class.disabled]="page === 1" (click)="changePage(page - 1)">
+                <a class="page-link" >Previous</a>
+            </li>
+            <li class="page-item" *ngFor="let p of pages" [class.active]="p === page" (click)="changePage(p)">
+                <a class="page-link" >{{ p }}</a>
+            </li>
+            <li class="page-item" [class.disabled]="page === totalPages" (click)="changePage(page + 1)">
+                <a class="page-link" >Next</a>
+            </li>
+        </ul>
+    </nav>
+    }
+
+    @else if (user_searchresults?.length != 0) {
+
+    <div class="container-fluid mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10 col-xl-8"> <!-- Adjust container width based on screen size -->
+                <div class="bg-light text-dark p-3 shadow-lg rounded">
+                    <div *ngFor="let ub of user_searchresults" class="mb-4" id="{{ub.blog_tags}}">
+                        <!-- <p><strong>Author Name:</strong> <strong><i> {{ ub?.user[0]?.full_name }}</i></strong></p> -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p><strong>Author Name:</strong> <strong><i> {{ ub?.user[0]?.full_name }}</i></strong></p>
+                            <p><strong><i>{{ub.updatedAt | date: 'mediumDate'}}</i></strong></p>
+                        </div>
+                        <p><strong>Title:</strong> {{ ub.blog_title }}</p>
+                        <p><strong>Description:</strong> {{ ub.blog_description }}</p>
+                        <p><strong>Blog Status:</strong> {{ ub.blog_status }}</p>
+                        <p><strong>Blog Tag:</strong> {{ ub.blog_tags }}</p>
+                        <img [src]="'http://localhost:9000' + ub.blog_img" alt="{{ ub.blog_title }}"
+                            class="img-fluid mb-3">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center mt-4">
+            <li class="page-item" [class.disabled]="searchpage === 1" (click)="changeSearchPage(searchpage - 1)">
+                <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item" *ngFor="let p of searchpages" [class.active]="p === searchpage"
+                (click)="changeSearchPage(searchpage)">
+                <a class="page-link" href="#">{{ p }}</a>
+            </li>
+            <li class="page-item" [class.disabled]="searchpage === searchtotalPages"
+                (click)="changeSearchPage(searchpage + 1)">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+    }
+
+</main>
+
+<router-outlet></router-outlet>

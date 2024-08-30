@@ -1,0 +1,16 @@
+<div class="container-fluid mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-12 col-md-10 col-lg-8"> <!-- Adjust container width based on screen size -->
+      <div class="bg-light text-dark p-3 shadow-lg rounded">
+        <div *ngFor="let ub of user_blogs" class="mb-4">
+          <p><strong>Title:</strong> {{ ub.blog_title }}</p>
+          <p><strong>Description:</strong> {{ ub.blog_description }}</p>
+          <p><strong>Blog Status:</strong> {{ ub.blog_status }}</p>
+          <p><strong>Blog Tag:</strong> {{ ub.blog_tags }}</p>
+          <img [src]="'http://localhost:9000' + ub.blog_img" alt="{{ ub.blog_title }}" class="img-fluid mb-3">
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

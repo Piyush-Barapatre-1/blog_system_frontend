@@ -1,0 +1,31 @@
+/* .mydiv {
+    max-width: 70%;
+    /* Set maximum width to 50% 
+}
+
+@media (max-width: 768px) {
+    .mydiv {
+        max-width: 90%;
+        /* Full width on smaller screens 
+    }
+} */
+
+/* Make sure the image is responsive and doesn't overflow its container */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Optional: Add some spacing around the image and container */
+  .bg-light {
+    padding: 1rem;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Ensure container has a max-width on larger screens */
+  .container-fluid {
+    max-width: 1200px;
+  }

@@ -1,0 +1,33 @@
+<div class="container-fluid d-flex justify-content-center">
+    <form [formGroup]="registerBlog" (ngSubmit)="onUpload()"
+        class="row g-3 w-100 border mt-4 shadow-lg rounded-3 p-4 form-container">
+        <div class="col-12">
+            <label for="inputEmail4" class="form-label">Write your blog title here ....</label>
+            <input type="text" class="form-control" id="inputEmail4" placeholder="Title" formControlName="blog_title">
+        </div>
+
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Write description</label>
+            <textarea rows="4" class="form-control" id="inputAddress" placeholder="Write description"
+                formControlName="blog_description"></textarea>
+        </div>
+
+        <div class="col-12">
+            <label for="inputEmail4" class="form-label">Add tag to you blog</label>
+            <input type="text" class="form-control" id="inputEmail4" placeholder="Title" formControlName="blog_tags">
+        </div>
+
+        <div class="col-12">
+            <label for="img" class="form-label">Upload Image</label>
+            <input type="file" (change)="onFileChange($event)" class="form-control" id="img"
+                aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary w-100">Post</button>
+        </div>
+
+        <div *ngIf="message">
+            {{message}}
+        </div>
+    </form>
+</div>

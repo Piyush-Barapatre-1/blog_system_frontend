@@ -1,0 +1,50 @@
+/* navbar.component.css */
+/* .navbar-brand {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar-toggler {
+    margin-right: auto;
+}
+
+.collapse {
+    flex-grow: 0;
+} */
+
+.navbar-brand img {
+    max-height: 30px;
+    /* Adjust this value to fit your design */
+}
+
+.list-group-item-action:hover {
+    cursor: pointer;
+    background-color: #f8f9fa;
+}
+
+input,
+ul {
+    max-width: 100%;
+
+}
+
+@media (max-width: 768px) {
+    input {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    ul {
+        max-width: 100%;
+    }
+}
+
+.highlight {
+    background-color: rgb(191, 191, 185);
+    transition: background-color 5s ease;
+}
+.spinner-border
+{
+    margin: auto;
+}

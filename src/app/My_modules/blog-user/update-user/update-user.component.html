@@ -1,0 +1,47 @@
+<main>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="card p-4 shadow-lg rounded-3">
+                    <form [formGroup]="userUpdate" (ngSubmit)="onSubmit()">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Update your name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name"
+                                formControlName="full_name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Update username:</label>
+                            <input type="text" class="form-control" id="username" placeholder="Username"
+                                formControlName="username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Update password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password"
+                                formControlName="password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="usertype" class="form-label">Update password:</label>
+                            <input readonly style="background-color: rgb(211, 206, 206);" class="form-control" id="uertype" placeholder="usertype"
+                                formControlName="usertype">
+                        </div>
+                        <button class="btn btn-success">Update </button>
+                    </form>
+                </div>
+                <!-- @if (message) {
+                <div class="alert alert-success mt-3" role="alert">
+                    {{message}}
+                </div>
+                } 
+
+                 @else if (error) {
+                <div class="alert alert-danger mt-3" role="alert">
+                    {{error}}
+                </div>
+                }  -->
+
+            </div>
+
+        </div>
+    </div>
+</main>
